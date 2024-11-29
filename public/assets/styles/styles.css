@@ -1,0 +1,150 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  background-color: #000000;
+  color: white;
+}
+
+.header {
+  height: 50px;
+  background-color: #de1f1f;
+  display: flex;
+  align-items: center;
+  padding: 8px;
+}
+.header a {
+  background-color: transparent;
+  text-decoration: none;
+  border: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.header a i {
+  font-size: 3em;
+}
+.header a span {
+  font-size: 3em;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.shows {
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  margin: 0 24px;
+}
+.shows__genre-title {
+  font-weight: bold;
+}
+.shows__list {
+  display: flex;
+  overflow: scroll;
+  height: fit-content;
+  flex: 1;
+  gap: 48px;
+}
+.shows__list::-webkit-scrollbar {
+  background-color: transparent;
+  height: 5px;
+}
+.shows__list::-webkit-scrollbar-corner {
+  background-color: transparent;
+}
+.shows__list::-webkit-scrollbar-thumb {
+  background-color: #424242;
+  border-radius: 50px;
+}
+.shows__list__card {
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+}
+.shows__list__card figure {
+  margin: 0;
+}
+.shows__list__card__footer {
+  display: flex;
+  gap: 8px;
+}
+.shows__list__card__footer button {
+  background-color: transparent;
+  border: 1px white solid;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 5px;
+  font-size: 0.8em;
+  cursor: pointer;
+}
+.shows__list__card__footer button:hover {
+  border: 1px #de1f1f solid;
+  color: #de1f1f;
+}
+
+.hero {
+  width: 100%;
+  min-height: 50vh;
+  height: auto;
+  position: relative;
+}
+.hero__controls {
+  position: absolute;
+  top: 20%;
+  right: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+  gap: 8px;
+  width: 40%;
+}
+.hero__controls h1 {
+  font-size: 4em;
+  line-height: 100%;
+  margin: 0;
+  font-family: "Bebas Neue", sans-serif;
+}
+.hero__controls button {
+  background-color: transparent;
+  border: 1px white solid;
+  color: white;
+  padding: 8px 24px;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+}
+.hero__controls button:hover {
+  border: 1px #de1f1f solid;
+  color: #de1f1f;
+}
+
+.info {
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 575.98px) {
+  .info {
+    flex-direction: column;
+  }
+}
+.info__image {
+  width: auto;
+}
+.info__image img {
+  max-height: 70vh;
+  width: 100%;
+}
+.info__description {
+  width: 50%;
+  padding: 16px;
+}
+@media (max-width: 575.98px) {
+  .info__description {
+    width: 90%;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

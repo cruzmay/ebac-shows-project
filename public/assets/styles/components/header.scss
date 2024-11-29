@@ -1,0 +1,23 @@
+.header {
+    height: 50px;
+    background-color: $color-primary;
+    display: flex;
+    align-items: center;
+    padding: $spacing-tiny;
+    a {
+        background-color: transparent;
+        text-decoration: none;
+        border: none;
+        color: $color-light;
+        display: flex;
+        align-items: center;
+        gap: $spacing-tiny;
+        i {
+            font-size: 3em;
+        }
+        span {
+            font-size: 3em;
+            font-family: "Bebas Neue", sans-serif;
+        }
+    }
+}

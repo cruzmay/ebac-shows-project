@@ -1,0 +1,52 @@
+.shows {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+margin: 0 $spacing-medium;
+    &__genre-title {
+        font-weight: bold;
+    }
+    &__list {
+        display: flex;
+        overflow: scroll;
+        height: fit-content;
+        flex: 1;
+        gap: $spacing-large;
+        &::-webkit-scrollbar {
+            background-color: transparent;
+            height: 5px;
+        }
+        &::-webkit-scrollbar-corner {
+            background-color: transparent;
+        }
+        &::-webkit-scrollbar-thumb {
+            background-color: #424242;
+            border-radius: 50px;
+        }
+        &__card {
+            display: flex;
+            flex-direction: column;
+            height: fit-content;
+            figure {
+                margin: 0;
+            }
+            &__footer {
+                display: flex;
+                gap: $spacing-tiny;
+                button {
+                    background-color: transparent;
+                    border: 1px $color-light solid;
+                    color: $color-light;
+                    padding: $spacing-tiny - 4 $spacing-tiny;
+                    border-radius: 5px;
+                    font-size: .8em;
+                    cursor: pointer;
+                    &:hover {
+                      border: 1px $color-primary solid;
+                      color: $color-primary;
+                    }
+                  }
+            }
+        }
+    }
+}

@@ -1,0 +1,36 @@
+.hero {
+  width: 100%;
+  min-height: 50vh;
+  height: auto;
+  position: relative;
+  &__controls {
+    position: absolute;
+    top: 20%;
+    right: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    gap: $spacing-tiny;
+    width: 40%;
+    h1 {
+      font-size: 4em;
+      line-height: 100%;
+      margin: 0;
+      font-family: "Bebas Neue", sans-serif;
+    }
+    button {
+      background-color: transparent;
+      border: 1px $color-light solid;
+      color: $color-light;
+      padding: $spacing-tiny $spacing-medium;
+      border-radius: 5px;
+      font-size: 1em;
+      cursor: pointer;
+      &:hover {
+        border: 1px $color-primary solid;
+        color: $color-primary;
+      }
+    }
+  }
+}
